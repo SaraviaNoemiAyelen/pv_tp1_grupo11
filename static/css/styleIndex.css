@@ -1,0 +1,100 @@
+:root {
+    --fondo-beige: #f6ebcd;
+    --marron-claro: #a15c3f;
+    --marron-medio: #8b4a34;
+    --marron-oscuro: #5c2f1e;
+    --texto: #3a2a20;
+    --blanco-crema: #fffaf2;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--fondo-beige);
+    color: var(--texto);
+    line-height: 1.7;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 3rem;
+    background-color: var(--marron-oscuro);
+    color: #fff;
+    margin: 0;
+    padding: 25px 0;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+img {
+    display: block;
+    margin: 20px auto;
+    border: 4px solid var(--marron-claro);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+    background-color: var(--marron-medio);
+    border-top: 2px solid var(--marron-claro);
+    border-bottom: 2px solid var(--marron-claro);
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    color: var(--fondo-beige);
+    background-color: var(--marron-claro);
+    border-radius: 6px;
+}
+
+section {
+    background-color: var(--blanco-crema);
+    padding: 35px 45px;
+    border-radius: 14px;
+    margin: 50px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid var(--marron-claro);
+}
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--marron-oscuro);
+    border-bottom: 1px solid var(--marron-claro);
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cita {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    background-color: var(--marron-claro);
+    border-left: 6px solid var(--marron-oscuro);
+    padding: 18px 28px;
+    margin: 50px auto;
+    max-width: 700px;
+    text-align: center;
+    color: var(--blanco-crema);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
