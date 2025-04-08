@@ -1,46 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museos</title>
+    <title>Museos en el Mundo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleMuseo.css">
 </head>
+
 <body>
-    <header>
-      <h1>Museos Importantes del Mundo</h1>
-    </header>
-    <nav>
-      <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="museos.html">Museos</a></li>
-          <li><a href="contactos.html">Contacto</a></li>
-      </ul>
-  </nav>
-  <section>
-    <img src="https://www.diariodecultura.com.ar/wp-content/uploads/2021/04/museos.jpg" height="250px">
-  </section>
-  <section>
-    <h2>Listas de enlaces</h2> 
-    <ul>
-      <li>Latinoamerica
-        <ul>
-          <li><a href="https://consulmex.sre.gob.mx/boise/index.php/component/content/article/83#:~:text=El%20Museo%20Nacional%20de%20Antropología,Ramírez%20Vázquez%2C%20destacado%20arquitecto%20mexicano." target="_blank">Museo Nacional de Antropologia - Mexico</a></li>
-          <li><a href="https://turismo.buenosaires.gob.ar/es/otros-establecimientos/museo-de-arte-latinoamericano-malba" target="_blank">Museo de Arte Latinoamericano de Buenos Aires - Argentina</a></li>
-          <li><a href="https://idpc.gov.co/historia-museo-de-bogota/#:~:text=Historia%20del%20Museo%20de%20Bogotá&text=En%201969%2C%20bajo%20la%20administración,10%20del%20barrio%20La%20Candelaria." target="_blank">Museo del Oro - Colombia</a>
-        </ul>
-      </li>
-      <li>Europa
-        <ul>
-          <li><a href="https://www.paris.es/museo-louvre#:~:text=Formado%20a%20partir%20de%20las,al%20disfrute%20del%20público%20general." target="_blank">Museo del Louvre - Francia</a></li>
-          <li><a href="https://www.diariodelviajero.com/museos/el-museo-britanico-breve-historia-y-datos-de-interes" target="_blank">Museo Britanico - Reino Unido</a></li>
-          <li><a href="https://whc-unesco-org.translate.goog/en/list/404/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=rq#:~:text=The%20Acropolis%20of%20Athens%20and,Greek%20Antiquity%20to%20the%20world." target="_blank">Museo de la Acrópolis - Grecia</a>
-        </ul>
-        <li>Asia
-            <ul>
-                <li><a href="https://www.nippon.com/es/japan-topics/g02407/?gad_source=1&gclid=Cj0KCQjw16O_BhDNARIsAC3i2GBasVQLYZ_llOSojcCPNqiOFy_SkK6RLPrEgoD2dz4Bs2sqrcMcSLgaAvt5EALw_wcB" target="_blank">teamLab Planets - Japon</a></li>
-                <li><a href="https://www.imj.org.il/en/content/bienvenido-al-museo-de-israel" target="_blank">El Museo de Israel - Israel</a></li>
-      </li>
-    </ul>
-  </section>
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barra de Navegación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link mx-lg-2" href="/index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link mx-lg-2" href="/museo.html">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link mx-lg-2" href="/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- FIN DE BARRA DE NAVEGACION -->
+
+    <!-- TÍTULO "MUSEOS EN EL MUNDO" -->
+    <div class="container text-center" style="margin-top: 100px;"> <!-- agregar separador de imagen o algo -->
+        <h1 class="titulo-museos">Museos Importantes del Mundo</h1>
+    </div>
+    
+
+    <!-- CONTENIDO -->
+    <article>
+        <div class="container text-center my-5">
+            <!-- Row de contenido -->
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{museox.jpg}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="{}" alt="">
+                            <h2>Paris</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=342c1fe1167455aa&q=Museo+del+Louvre&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiauKKixWJKoqS-KP-GNqUJutaUTTCDFFzfkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZFU3NnT7573uee9987lYrPcRu2OaGoBzwzGo_5wxPZP2f4JOxifHg_XIC9j5KypgFGF8nQNKv9V1xcIy37qYAs07AVGyQ4NjAtFsdeAvkXej_2JjXWkSAYJsWFq5eGGkzfKJjaxG8JUJbK6sC0SKVs-nGCPZSVujrZD7PyEi3J75ELSVkhTuYN5CtV4RTY4IvQxd0OnaxJdhFbuQbEr4dCEU6VUwQXelCHCLKFgkRJdlAIyI29EQkQ4Tt0AB4my1k1jXBANKbZyjiAZR0RxnJEGjmlzJKgTdsg0spBx5LYULUzmhCPDn2BW3WmHHA4aWUQuHWYZTDBraL6S8I1qiSyTJ-WiFZldEBXfxAvTVKCUP94qVBe4YMmoI_I_wQ9Qrf36-32nsQHP3376Br4AuvLYC1wtmWk6c0ZXR3p07g08bWakzBHzkK4MdDTVg3BoMA9o-shzXR1GM2_O3Gvs0jttmAtttAz1JQqbd8_w74r8G1BoOvz4_dfLz6Vhndp-V8tHvcZBq06Xjj10MZvXX7_bv-pTvw9bO3T5_GLlzT2U1l88uc9uNn8Om3u3m9jra7W3R7PggOK2y97ly_2bFrXNfvrhzcdStQxqFF8sUwwoZIUydedVsTbYHsVjNd1lT7xlHOjPSuAfMZyiBHsDAAA&sa=X&ved=2ahUKEwjTlcDKjsiMAxWQHLkGHfYyL7cQ-BZ6BAg7EAU" class="btn-1">Museo del Louvre</a>
+                        </div>
+                    </div>
+                    <p>La arqudjhdjfhdjfilización...</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </article>
+    <!-- FIN DEL CONTENIDO -->
+
+    <!-- Agregar JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
