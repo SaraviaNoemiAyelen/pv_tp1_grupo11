@@ -1,33 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museos</title>
+    <title>Museos en el Mundo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleMuseo.css">
 </head>
+
 <body>
-    <h1>Museos Importantes del Mundo</h1>
-    <img src="https://www.diariodecultura.com.ar/wp-content/uploads/2021/04/museos.jpg" height="250px">
-    <h1>Listas de enlaces</h1> 
-    <ul>
-      <li>Latinoamerica
-        <ul>
-          <li><a href="https://consulmex.sre.gob.mx/boise/index.php/component/content/article/83#:~:text=El%20Museo%20Nacional%20de%20Antropología,Ramírez%20Vázquez%2C%20destacado%20arquitecto%20mexicano." target="_blank">Museo Nacional de Antropologia - Mexico</a></li>
-          <li><a href="https://turismo.buenosaires.gob.ar/es/otros-establecimientos/museo-de-arte-latinoamericano-malba" target="_blank">Museo de Arte Latinoamericano de Buenos Aires - Argentina</a></li>
-          <li><a href="https://idpc.gov.co/historia-museo-de-bogota/#:~:text=Historia%20del%20Museo%20de%20Bogotá&text=En%201969%2C%20bajo%20la%20administración,10%20del%20barrio%20La%20Candelaria." target="_blank">Museo del Oro - Colombia</a>
-        </ul>
-      </li>
-      <li>Europa
-        <ul>
-          <li><a href="https://www.paris.es/museo-louvre#:~:text=Formado%20a%20partir%20de%20las,al%20disfrute%20del%20público%20general." target="_blank">Museo del Louvre - Francia</a></li>
-          <li><a href="https://www.diariodelviajero.com/museos/el-museo-britanico-breve-historia-y-datos-de-interes" target="_blank">Museo Britanico - Reino Unido</a></li>
-          <li><a href="https://whc-unesco-org.translate.goog/en/list/404/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=rq#:~:text=The%20Acropolis%20of%20Athens%20and,Greek%20Antiquity%20to%20the%20world." target="_blank">Museo de la Acrópolis - Grecia</a>
-        </ul>
-        <li>Asia
-            <ul>
-                <li><a href="https://www.nippon.com/es/japan-topics/g02407/?gad_source=1&gclid=Cj0KCQjw16O_BhDNARIsAC3i2GBasVQLYZ_llOSojcCPNqiOFy_SkK6RLPrEgoD2dz4Bs2sqrcMcSLgaAvt5EALw_wcB" target="_blank">teamLab Planets - Japon</a></li>
-                <li><a href="https://www.imj.org.il/en/content/bienvenido-al-museo-de-israel" target="_blank">El Museo de Israel - Israel</a></li>
-      </li>
-    </ul>
+    <!--BARRA DE NAVEGACION-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="#">Museos del Mundo</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barra de Navegacion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        
+                        <li class="nav-item">
+                            <ul id="naveador">
+
+                                <a class="nav-link mx-lg-2" aria-current="page" href="index.html">INDEX</a>
+                            
+                            </ul>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <ul id="naveador">
+
+                                <a class="nav-link mx-lg-2 active" href="museos.html">MUSEO</a>
+                            
+                            </ul>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <ul id="naveador">
+
+                                <a class="nav-link mx-lg-2" href="contactos.html">CONTACTO</a>
+                            
+                            </ul>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!--FIN DE BARRA DE NAVEGACION-->
+
+    <!-- TÍTULO "MUSEOS EN EL MUNDO" -->
+    <div class="container text-center" style="margin-top: 100px;"> <!-- agregar separador de imagen o algo -->
+        <h1 class="titulo-museos">Museos Importantes del Mundo</h1>
+    </div>
+    
+
+    <!-- CONTENIDO -->
+    <article>
+        <div class="container text-center my-5">
+            <!-- Row de contenido -->
+            <div class="row">
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="IMAGENES/britanico.jpg" alt="" class="imagenmuseo">
+
+                            <h2>Museo Británico</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=4204840b24fada1f&q=Museo+Brit%C3%A1nico&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiaOKKixWJKoqS2LH8cfUQJuNNKJphJis-hzbsX1x_BEn9shfgEDq3LLAwEJHBlTBRAaEGMiGBBsDYmUkFXe-6XfPve-j97m7Yr5RbKFWm7O0Ds8MxqP-cMT2j9n-Q3YwPj4arkF2jFEw9WANSv9V1yeyAiWNyJKfOFgW7dDAOJdlGyM07Pka0DfI-7GvEh3JopF5G05maMPEwiVGR1OIrMxti3Cq2jaxlCwfqrjespYurtGgEq8y2XZIK69yUdYauZCM0EkSqY25GzpdkzQ4AvQxC4YYk9HmXLQiJQK0MkaxK2L_JaeIiYwPeFOCCLPomDZHdEEMSC7eiDoR4ThxA2wkSHo3ibMhIkjSCCiOU9LQDtskgIiCeYJZ6qQcuURZD5czwpHhq5gVV2uTemikEXkLmKZwiVlHs5WIw-tLSSIhO4Lsm3hjmjIUs4dchcqcGAm-r_4EP0C58uvv91p9A56_-fQNfAF06bEXuPpyqk-YE7o8mkSn3sDTp0bCHDL36dJggrRJEA4N5h5NH3quO4HR1Jsxd-o7dK0FM6GFFuFkgcLG7RP8Q5F_DXINhx-_-3r-uTCsUtt1sXjUq-83q3ThyENn01n11du9iz71-6BZo4unZytv5qGk-uLJXXaz-XPQ2L1pYq-ulN4uzYJ9ittue-eXe9dNauv99P3rD4VyEVQoPl-kGJBLc0Xq1st8ZbAdxWMfBNPo4-VsCr1nBfAPKQMRFHoDAAA&sa=X&ved=2ahUKEwjU0_PO6MiMAxWWIrkGHTJUJO0Q-BZ6BAg7EAU&biw=1738&bih=844&dpr=1.1#" class="btn-1">MAS INFO</a>
+                        </div>
+                    </div>
+                    
+                    <p class="textomuseo">El Museo Británico es un museo de la ciudad de Londres, Reino Unido, uno de los museos más importantes y visitados del mundo. Sus colecciones abarcan campos diversos del saber humano, como la historia, la arqueología, la etnografía y el arte.</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="IMAGENES/Museos-gratis-en-Londres-p.jpg" alt="" class="imagenmuseo">
+
+                            <h2>Museo España</h2>
+                            <a href="https://www.google.com.ar/search?sa=X&sca_esv=4204840b24fada1f&q=Museo+de+Londres&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiStEFRYrElWVJbHj-GNqUJutaUTTCDFF9fkrti-OP2LHHvkLEEidCwsMLHRkQBUbGRBiIBsSbAyIlZEU7uzpd8-9z3Pve-dysVlpo3aH55AZ8cxwMh6MxuzghB0cs8PJydFoDco3-5yldjEKphasQeW_6vpEVqCkElnyUwfLoh0aGBeybGOEhr1YA_rfyX7sT4mOZNHIsw0nD7RhauESo6sqRFYWtkU4m9o2iZQsH05xvWUlLq5RoRKvctl2iJWfclFujVxIWuimqdTB3AudnkkMjgB9zIIhxqS1BRetSIkArZxR7Io4P-EUMZXxBm9KEGEWHdPmiC6IAZmLN6JuRDhO3QAHCZLWS-O8iQiSaQQUxxkxdMIOGUBEwSLFLHUzjlyirIXJnHBk-FPMiqt2SD00soi8BcwymGDW0Hwl4uG1RJLIkF1B9k28ME0ZivlDrkJlQYIE35_-AN9Btfbzz7edxgY8e_PxK_gM6MojL3C1ZKbpzCldHevRmTf0tJmRMofMA7oy1JGqB-HIYO7T9KHnujqMZt6cudu4Q--0YS600TLUlyhs3j7Ffyjyr0Gh6fCTd18uPpVGdWr7XS4f9hv7rTpdOvLQ-Wxef_V273JA_Tpo7dDls_OVN_dQWn_--B672fw-aO7emNirK6W_S7Ngn-K2y_7Fi73rFrXNfvL-9YdStQxqFF8sUwwoZIUydetlsTbctuKxms4ee3Mt0MOnJfAXSnj3nnsDAAA&ved=2ahUKEwjb8vCU6ciMAxWkJbkGHTtfOUUQ-BZ6BAg5EAo&biw=1738&bih=844&dpr=1.1" class="btn-1">MAS INFO</a>
+                        </div>
+                    </div>
+                    
+                    <p class="textomuseo">El Museo de Londres documenta la historia de Londres desde la prehistoria hasta el presente. El museo se encuentra cerca de Barbican centre, como parte del llamativo complejo de edificios Barbican.</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="IMAGENES/mueo2.jpg" alt="" class="imagenmuseo">
+
+                            <h2>Museo Chino</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=4204840b24fada1f&q=Museo+Brit%C3%A1nico&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiaOKKixWJKoqS2LH8cfUQJuNNKJphJis-hzbsX1x_BEn9shfgEDq3LLAwEJHBlTBRAaEGMiGBBsDYmUkFXe-6XfPve-j97m7Yr5RbKFWm7O0Ds8MxqP-cMT2j9n-Q3YwPj4arkF2jFEw9WANSv9V1yeyAiWNyJKfOFgW7dDAOJdlGyM07Pka0DfI-7GvEh3JopF5G05maMPEwiVGR1OIrMxti3Cq2jaxlCwfqrjespYurtGgEq8y2XZIK69yUdYauZCM0EkSqY25GzpdkzQ4AvQxC4YYk9HmXLQiJQK0MkaxK2L_JaeIiYwPeFOCCLPomDZHdEEMSC7eiDoR4ThxA2wkSHo3ibMhIkjSCCiOU9LQDtskgIiCeYJZ6qQcuURZD5czwpHhq5gVV2uTemikEXkLmKZwiVlHs5WIw-tLSSIhO4Lsm3hjmjIUs4dchcqcGAm-r_4EP0C58uvv91p9A56_-fQNfAF06bEXuPpyqk-YE7o8mkSn3sDTp0bCHDL36dJggrRJEA4N5h5NH3quO4HR1Jsxd-o7dK0FM6GFFuFkgcLG7RP8Q5F_DXINhx-_-3r-uTCsUtt1sXjUq-83q3ThyENn01n11du9iz71-6BZo4unZytv5qGk-uLJXXaz-XPQ2L1pYq-ulN4uzYJ9ittue-eXe9dNauv99P3rD4VyEVQoPl-kGJBLc0Xq1st8ZbAdxWMfBNPo4-VsCr1nBfAPKQMRFHoDAAA&sa=X&ved=2ahUKEwjU0_PO6MiMAxWWIrkGHTJUJO0Q-BZ6BAg7EAU&biw=1738&bih=844&dpr=1.1#" class="btn-1">MAS INFO</a>
+                        </div>
+                    </div>
+                    
+                    <p class="textomuseo">El Museo Británico es un museo de la ciudad de Londres, Reino Unido, uno de los museos más importantes y visitados del mundo. Sus colecciones abarcan campos diversos del saber humano, como la historia, la arqueología, la etnografía y el arte.</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="IMAGENES/museo1.jpg" alt="" class="imagenmuseo">
+
+                            <h2>Museo EEUU</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=4204840b24fada1f&q=Museo+Brit%C3%A1nico&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiaOKKixWJKoqS2LH8cfUQJuNNKJphJis-hzbsX1x_BEn9shfgEDq3LLAwEJHBlTBRAaEGMiGBBsDYmUkFXe-6XfPve-j97m7Yr5RbKFWm7O0Ds8MxqP-cMT2j9n-Q3YwPj4arkF2jFEw9WANSv9V1yeyAiWNyJKfOFgW7dDAOJdlGyM07Pka0DfI-7GvEh3JopF5G05maMPEwiVGR1OIrMxti3Cq2jaxlCwfqrjespYurtGgEq8y2XZIK69yUdYauZCM0EkSqY25GzpdkzQ4AvQxC4YYk9HmXLQiJQK0MkaxK2L_JaeIiYwPeFOCCLPomDZHdEEMSC7eiDoR4ThxA2wkSHo3ibMhIkjSCCiOU9LQDtskgIiCeYJZ6qQcuURZD5czwpHhq5gVV2uTemikEXkLmKZwiVlHs5WIw-tLSSIhO4Lsm3hjmjIUs4dchcqcGAm-r_4EP0C58uvv91p9A56_-fQNfAF06bEXuPpyqk-YE7o8mkSn3sDTp0bCHDL36dJggrRJEA4N5h5NH3quO4HR1Jsxd-o7dK0FM6GFFuFkgcLG7RP8Q5F_DXINhx-_-3r-uTCsUtt1sXjUq-83q3ThyENn01n11du9iz71-6BZo4unZytv5qGk-uLJXXaz-XPQ2L1pYq-ulN4uzYJ9ittue-eXe9dNauv99P3rD4VyEVQoPl-kGJBLc0Xq1st8ZbAdxWMfBNPo4-VsCr1nBfAPKQMRFHoDAAA&sa=X&ved=2ahUKEwjU0_PO6MiMAxWWIrkGHTJUJO0Q-BZ6BAg7EAU&biw=1738&bih=844&dpr=1.1#" class="btn-1">MAS INFO</a>
+                        </div>
+                    </div>
+                    
+                    <p class="textomuseo">El Museo Británico es un museo de la ciudad de Londres, Reino Unido, uno de los museos más importantes y visitados del mundo. Sus colecciones abarcan campos diversos del saber humano, como la historia, la arqueología, la etnografía y el arte.</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="IMAGENES/museo3.jpg" alt="" class="imagenmuseo">
+
+                            <h2>Museo Japon</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=4204840b24fada1f&q=Museo+Brit%C3%A1nico&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiaOKKixWJKoqS2LH8cfUQJuNNKJphJis-hzbsX1x_BEn9shfgEDq3LLAwEJHBlTBRAaEGMiGBBsDYmUkFXe-6XfPve-j97m7Yr5RbKFWm7O0Ds8MxqP-cMT2j9n-Q3YwPj4arkF2jFEw9WANSv9V1yeyAiWNyJKfOFgW7dDAOJdlGyM07Pka0DfI-7GvEh3JopF5G05maMPEwiVGR1OIrMxti3Cq2jaxlCwfqrjespYurtGgEq8y2XZIK69yUdYauZCM0EkSqY25GzpdkzQ4AvQxC4YYk9HmXLQiJQK0MkaxK2L_JaeIiYwPeFOCCLPomDZHdEEMSC7eiDoR4ThxA2wkSHo3ibMhIkjSCCiOU9LQDtskgIiCeYJZ6qQcuURZD5czwpHhq5gVV2uTemikEXkLmKZwiVlHs5WIw-tLSSIhO4Lsm3hjmjIUs4dchcqcGAm-r_4EP0C58uvv91p9A56_-fQNfAF06bEXuPpyqk-YE7o8mkSn3sDTp0bCHDL36dJggrRJEA4N5h5NH3quO4HR1Jsxd-o7dK0FM6GFFuFkgcLG7RP8Q5F_DXINhx-_-3r-uTCsUtt1sXjUq-83q3ThyENn01n11du9iz71-6BZo4unZytv5qGk-uLJXXaz-XPQ2L1pYq-ulN4uzYJ9ittue-eXe9dNauv99P3rD4VyEVQoPl-kGJBLc0Xq1st8ZbAdxWMfBNPo4-VsCr1nBfAPKQMRFHoDAAA&sa=X&ved=2ahUKEwjU0_PO6MiMAxWWIrkGHTJUJO0Q-BZ6BAg7EAU&biw=1738&bih=844&dpr=1.1#" class="btn-1">MAS INFO</a>
+                        </div>
+                    </div>
+                    
+                    <p class="textomuseo">El Museo Británico es un museo de la ciudad de Londres, Reino Unido, uno de los museos más importantes y visitados del mundo. Sus colecciones abarcan campos diversos del saber humano, como la historia, la arqueología, la etnografía y el arte.</p>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="IMAGENES/museo4.webp" alt="" class="imagenmuseo">
+
+                            <h2>Museo Egipto</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=4204840b24fada1f&q=Museo+Brit%C3%A1nico&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiaOKKixWJKoqS2LH8cfUQJuNNKJphJis-hzbsX1x_BEn9shfgEDq3LLAwEJHBlTBRAaEGMiGBBsDYmUkFXe-6XfPve-j97m7Yr5RbKFWm7O0Ds8MxqP-cMT2j9n-Q3YwPj4arkF2jFEw9WANSv9V1yeyAiWNyJKfOFgW7dDAOJdlGyM07Pka0DfI-7GvEh3JopF5G05maMPEwiVGR1OIrMxti3Cq2jaxlCwfqrjespYurtGgEq8y2XZIK69yUdYauZCM0EkSqY25GzpdkzQ4AvQxC4YYk9HmXLQiJQK0MkaxK2L_JaeIiYwPeFOCCLPomDZHdEEMSC7eiDoR4ThxA2wkSHo3ibMhIkjSCCiOU9LQDtskgIiCeYJZ6qQcuURZD5czwpHhq5gVV2uTemikEXkLmKZwiVlHs5WIw-tLSSIhO4Lsm3hjmjIUs4dchcqcGAm-r_4EP0C58uvv91p9A56_-fQNfAF06bEXuPpyqk-YE7o8mkSn3sDTp0bCHDL36dJggrRJEA4N5h5NH3quO4HR1Jsxd-o7dK0FM6GFFuFkgcLG7RP8Q5F_DXINhx-_-3r-uTCsUtt1sXjUq-83q3ThyENn01n11du9iz71-6BZo4unZytv5qGk-uLJXXaz-XPQ2L1pYq-ulN4uzYJ9ittue-eXe9dNauv99P3rD4VyEVQoPl-kGJBLc0Xq1st8ZbAdxWMfBNPo4-VsCr1nBfAPKQMRFHoDAAA&sa=X&ved=2ahUKEwjU0_PO6MiMAxWWIrkGHTJUJO0Q-BZ6BAg7EAU&biw=1738&bih=844&dpr=1.1#" class="btn-1">MAS INFO</a>
+                        </div>
+                    </div>
+                    
+                    <p class="textomuseo">El Museo Británico es un museo de la ciudad de Londres, Reino Unido, uno de los museos más importantes y visitados del mundo. Sus colecciones abarcan campos diversos del saber humano, como la historia, la arqueología, la etnografía y el arte.</p>
+                </div>
+                
+               
+                <div class="col-md-6 d-flex">
+                    <div class="contenido-group">
+                        <div class="contenido">
+                            <img src="IMAGENES/museo5.webp" alt="" class="imagenmuseo">
+
+                            <h2>Museo Cordoba</h2>
+                            <a href="https://www.google.com.ar/search?sca_esv=4204840b24fada1f&q=Museo+Brit%C3%A1nico&stick=H4sIAAAAAAAAAD2SvW_TQBjGfZESJQ5IiaOKKixWJKoqS2LH8cfUQJuNNKJphJis-hzbsX1x_BEn9shfgEDq3LLAwEJHBlTBRAaEGMiGBBsDYmUkFXe-6XfPve-j97m7Yr5RbKFWm7O0Ds8MxqP-cMT2j9n-Q3YwPj4arkF2jFEw9WANSv9V1yeyAiWNyJKfOFgW7dDAOJdlGyM07Pka0DfI-7GvEh3JopF5G05maMPEwiVGR1OIrMxti3Cq2jaxlCwfqrjespYurtGgEq8y2XZIK69yUdYauZCM0EkSqY25GzpdkzQ4AvQxC4YYk9HmXLQiJQK0MkaxK2L_JaeIiYwPeFOCCLPomDZHdEEMSC7eiDoR4ThxA2wkSHo3ibMhIkjSCCiOU9LQDtskgIiCeYJZ6qQcuURZD5czwpHhq5gVV2uTemikEXkLmKZwiVlHs5WIw-tLSSIhO4Lsm3hjmjIUs4dchcqcGAm-r_4EP0C58uvv91p9A56_-fQNfAF06bEXuPpyqk-YE7o8mkSn3sDTp0bCHDL36dJggrRJEA4N5h5NH3quO4HR1Jsxd-o7dK0FM6GFFuFkgcLG7RP8Q5F_DXINhx-_-3r-uTCsUtt1sXjUq-83q3ThyENn01n11du9iz71-6BZo4unZytv5qGk-uLJXXaz-XPQ2L1pYq-ulN4uzYJ9ittue-eXe9dNauv99P3rD4VyEVQoPl-kGJBLc0Xq1st8ZbAdxWMfBNPo4-VsCr1nBfAPKQMRFHoDAAA&sa=X&ved=2ahUKEwjU0_PO6MiMAxWWIrkGHTJUJO0Q-BZ6BAg7EAU&biw=1738&bih=844&dpr=1.1#" class="btn-1">MAS INFO</a>
+                        </div>
+                    </div>
+                    
+                    <p class="textomuseo">El Museo Británico es un museo de la ciudad de Londres, Reino Unido, uno de los museos más importantes y visitados del mundo. Sus colecciones abarcan campos diversos del saber humano, como la historia, la arqueología, la etnografía y el arte.</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </article>
+    <!-- FIN DEL CONTENIDO -->
+
+    <!-- Agregar JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

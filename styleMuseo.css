@@ -1,0 +1,169 @@
+/* ESTILO MARCHE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Libre Baskerville", serif;
+}
+
+/*estilo de la barra de navegacion miooo*/
+.navbar {
+    background-color:#896262ac;
+
+    height: 89px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+/*estilo del logo*/
+.navbar-brand {
+    font-weight: 500;
+    font-size: 24px;
+    transition: 0.3s color;
+    color: #050505;
+}
+/*estilo del boton del menu*/
+.navbar-toggler{
+    border: none;
+    color: #3d251e;
+    background-color:#896262ac;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    border: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+/* Estilo de la lista de enlaces (botones) */
+#naveador {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Esto pone los elementos en una fila horizontal */
+}
+
+#naveador li {
+    display: inline;
+    margin: 0 15px; /* Añade espacio entre los enlaces */
+}
+
+#naveador a {
+    text-decoration: none;
+    color: #2a1717; /* Color del texto */
+    font-weight: bold; /* Hacer que el texto sea negrita */
+    transition: all 0.3s ease; /* Transición suave para cambios */
+}
+
+#naveador a:hover,
+#naveador a:focus {
+    color: #4B2E2B; /* Color del texto al pasar el ratón o al recibir foco */
+    background-color: #E3D7BF; /* Fondo de color claro */
+    padding: 6px 12px; /* Relleno para darle el estilo de "botón" */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+@media(min-width: 991px){
+   .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #3d251e;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+   }
+   .nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+   }
+}
+
+
+/* Título "Museos en el Mundo" */
+.titulo-museos {
+    font-family:  "Libre Baskerville", serif;
+    font-size: 6rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: 2px 2px 5px rgba(252, 249, 249, 0.3);
+}
+
+/* Contenido */
+
+.imagenmuseo {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.textomuseo {
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+
+
+.contenido h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #333;
+    font-size: 2rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+p {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(249, 246, 246);
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+    background-color: rgba(101, 67, 33, 0.7);
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.btn-1 {
+    background-color: #CE967B;
+    color: white;
+    font-size: 14px;
+    padding: 11px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.btn-1:hover {
+    background-color: rgb(159, 103, 63);
+}
